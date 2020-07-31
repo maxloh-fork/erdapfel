@@ -72,7 +72,6 @@ $BLOCK_ICON_FONT_SIZE: 16px;
   margin: 0;
 }
 
-.poi_panel__info__link,
 .poi_panel__info__contact {
   color: $secondary_text;
 
@@ -82,17 +81,16 @@ $BLOCK_ICON_FONT_SIZE: 16px;
   }
 }
 
+.poi_panel__external_link {
+  color: $action-blue-base;
+}
+
 .poi_panel__info__hour__circle {
   width: 6px;
   height: 6px;
   display: inline-block;
   margin: 3px 1px;
   border-radius: 50%;
-}
-
-.poi_panel__description__ellipsis {
-  margin-top: 13px;
-  padding-right: 45px;
 }
 
 .poi_panel__info__item {
@@ -123,7 +121,6 @@ $BLOCK_ICON_FONT_SIZE: 16px;
 }
 
 .poi_panel__pictures_title {
-  border-top: 1px solid #e0e1e6;
   padding: 15px 0;
   font-size: 14px;
   color: #495063;
@@ -144,6 +141,10 @@ $BLOCK_ICON_FONT_SIZE: 16px;
   width: calc(50% - 7px);
   padding-bottom: calc(50% - 7px);
   display: inline-block;
+}
+
+.poi_panel__info__wiki {
+  margin-top: 20px;
 }
 
 .poi_panel__pictures_tiles {
@@ -256,14 +257,14 @@ $BLOCK_ICON_FONT_SIZE: 16px;
 
 
 .poi_panel__sub__sub_block__title {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: normal;
-  margin: 10px 0 4px 0;
   color: $secondary_text;
+  width: 100%;
 }
 
 .poi_panel__sub_block__title {
-  margin-top:20px;
+  width: 100%;
   cursor: pointer;
   position: relative;
 }
@@ -275,31 +276,6 @@ $BLOCK_ICON_FONT_SIZE: 16px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  padding-left: $BLOCK_PADDING;
-}
-
-.poi_panel__info__wiki {
-  margin-top: 15px;
-  padding-left: $BLOCK_PADDING;
-}
-
-.poi_panel__info__wiki__link {
-  font-size: 12px;
-  color: $secondary_text;
-  position: relative;
-
-  .icon-chevrons-right {
-    position: absolute;
-    top: 1px;
-  }
-  span {
-    margin-left: 15px;
-  }
-}
-
-.poi_panel__info__wiki__link:hover {
-  color: $primary_text;
-  text-decoration: none;
 }
 
 .marker .icon-marker::before {
@@ -348,11 +324,7 @@ $BLOCK_ICON_FONT_SIZE: 16px;
 @media (max-width: 640px) {
   .poi_panel__content,
   .poi_panel--empty-header .poi_panel__content {
-    padding: 8px 15px;
-  }
-
-  .poi_panel__sub_block__title {
-    width: calc(100% - 16px);
+    padding: 8px 12px;
   }
 
   .poi_panel__info__section:not(:last-of-type):after {

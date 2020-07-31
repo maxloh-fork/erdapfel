@@ -2,6 +2,8 @@
 import React from 'react';
 import { toCssUrl } from 'src/libs/url_utils';
 
+import Divider from 'src/components/ui/Divider';
+
 const ImagesBlock = ({
   block,
   poi,
@@ -12,10 +14,10 @@ const ImagesBlock = ({
   }
 
   return <div className="poi_panel__pictures">
-    <h5 className="poi_panel__pictures_title">
-      <i className="icon-icon_camera"></i>
+    <Divider />
+    <div className="u-text--smallTitle" style={{ marginBottom: 20 }}>
       { _('Photos') }
-    </h5>
+    </div>
     <div className="poi_panel__pictures_tiles">
       {
         images.map(i =>
